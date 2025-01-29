@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc0kxlj4i4sxa"]
+
+[ext_resource type="Script" path="res://scenes/character_base.gd" id="1_fygy6"]
+
+[node name="CharacterBase" type="Area2D"]
+script = ExtResource("1_fygy6")
