@@ -41,6 +41,11 @@ func start_attack() -> void:
 	var sprite = get_animated_sprite_2d_object()
 	var state = get_attack_direction(sprite)
 	attack_timer = attack_duration  # 初始化攻擊計時器
+	if state == PlayerState.ATTACK_1_LEFT:
+		sprite.animation = 'attack_1_left'
+		sprite.flip_h = true
+		sprite.flip_v = false
+		#sprite.scale.x = -1
 	set_state(state_animation_map[state])
 	
 
